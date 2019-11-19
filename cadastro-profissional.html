@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">
+            <img src="img/logoblue.svg" width="64" height="32" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card  mt-4 shadow mt-4 bg-light rounded">
+            <div class="card-header text-center">
+                <h5 class="">Seja Bem Vindo ao nosso time!</h5>
+                <small>Insira seus dados e aproveite nossa plataforma :)</small>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="cpf_cnpj">CPF ou CNPJ</label>
+                        <input type="text" class="form-control rounded-pill" id="cpf_cnpj" placeholder="Apenas números">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control rounded-pill" id="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Data de nascimento</label>
+                        <input type="date" class="form-control rounded-pill" id="nome" placeholder="dd/mm/aaaa">
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control rounded-pill" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="senha">Senha</label>
+                            <input name="senha" type="password" class="form-control rounded-pill" id="senha"
+                                placeholder="Senha">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="telefone">Telefone</label>
+                            <input name="telefone" type="text" class="form-control rounded-pill" id="telefone"
+                                placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefone-celular">Celular</label>
+                            <input name="telefone_celular" type="text" class="form-control rounded-pill"
+                                id="telefone-celular" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input name="endereco" type="text" class="form-control rounded-pill" id="endereco"
+                            placeholder="Av. Getúlio vargas, 443">
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input name="complemento" type="text" class="form-control rounded-pill" id="complemento"
+                            placeholder="Apartmento 223, Ed Ramalho">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cidade">Cidade</label>
+                            <input name="cidade" type="text" class="form-control rounded-pill" id="cidade">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" class="form-control rounded-pill">
+                                <option selected>Selecione...</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="cep">CEP</label>
+                            <input name="cep" type="text" class="form-control rounded-pill" id="cep"
+                                placeholder="Apenas Números">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="sobre">Sobre</label>
+                            <textarea name="sobre" class="form-control" id="sobre" rows="3"
+                                placeholder="Faça um breve resumo de suas esperiências profissionais"></textarea>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="profissao">Categoria</label>
+                            <select name="profissao" id="profissao" class="form-control rounded-pill">
+                                <option selected>Selecione...</option>
+                                <option>Assistência Técnica </option>
+                                <option>Design e Tecnologia </option>
+                                <option>Autos</option>
+                                <option>Construção/Manutenção/Reforma </option>
+                                <option>Consultoria </option>
+                                <option>Eventos</option>
+                                <option>Aulas Particulares </option>
+                                <option>Moda e Beleza </option>
+                                <option>Saúde </option>
+                                <option>Saúde Animal</option>
+                                <option>Serviços Domésticos </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="profissao">Profissão</label>
+                            <input name="profissao" type="text" class="form-control rounded-pill" id="profissao"
+                                placeholder="Borracheiro">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="valor-hora">R$/Hora</label>
+                            <input name="valor_hora" type="text" class="form-control rounded-pill" id="valor-hora"
+                                placeholder="20.00">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="hora-inicio">Horário inicial</label>
+                            <select name="hora_inicio" id="hora-inicio" class="form-control rounded-pill">
+                                <option selected>Selecione...</option>
+                                <option>00:00 </option>
+                                <option>01:00 </option>
+                                <option>02:00 </option>
+                                <option>03:00 </option>
+                                <option>04:00 </option>
+                                <option>05:00 </option>
+                                <option>06:00 </option>
+                                <option>07:00 </option>
+                                <option>08:00 </option>
+                                <option>09:00 </option>
+                                <option>10:00 </option>
+                                <option>11:00 </option>
+                                <option>12:00 </option>
+                                <option>13:00 </option>
+                                <option>14:00 </option>
+                                <option>15:00 </option>
+                                <option>16:00 </option>
+                                <option>17:00 </option>
+                                <option>18:00 </option>
+                                <option>19:00 </option>
+                                <option>20:00 </option>
+                                <option>21:00 </option>
+                                <option>22:00 </option>
+                                <option>23:00 </option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="hora-fim">Horário Final</label>
+                            <select name="hora_fim" id="hora-fim" class="form-control rounded-pill">
+                                <option selected>Selecione...</option>
+                                <option>00:00 </option>
+                                <option>01:00 </option>
+                                <option>02:00 </option>
+                                <option>03:00 </option>
+                                <option>04:00 </option>
+                                <option>05:00 </option>
+                                <option>06:00 </option>
+                                <option>07:00 </option>
+                                <option>08:00 </option>
+                                <option>09:00 </option>
+                                <option>10:00 </option>
+                                <option>11:00 </option>
+                                <option>12:00 </option>
+                                <option>13:00 </option>
+                                <option>14:00 </option>
+                                <option>15:00 </option>
+                                <option>16:00 </option>
+                                <option>17:00 </option>
+                                <option>18:00 </option>
+                                <option>19:00 </option>
+                                <option>20:00 </option>
+                                <option>21:00 </option>
+                                <option>22:00 </option>
+                                <option>23:00 </option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="foto">Foto</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input name="foto" type="file" class="custom-file-input" id="foto"
+                                            aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Selecione uma foto</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group col text">
+                        <button class="btn btn-primary rounded-pill" type="submit"><i class="fa fa-send"></i>
+                            Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End -->
+    <footer class="container" style="margin-top: 10rem;">
+        <hr>
+        <p class="float-right"><a href="#">techzonepb@gmail.com</a></p>
+
+        <p>© 2019 TechZone. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>Projeto desenvolvido por alunos no Unipê· <a href="#">Sobre nós</a></p>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

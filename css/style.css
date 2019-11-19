@@ -1,0 +1,73 @@
+body {
+    background-color: #ebebeb;
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width:  200px;
+    height: 30px;
+}
+
+.full-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-item img{
+        position: absolute;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 400px;
+    }
+
+    .carousel-item{
+        height: 300px;
+    } 
+}
+
+@media screen and (max-width: 2000px) {
+    .carousel-item img {
+        position: absolute;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 800px;
+    }
+
+    .carousel-item{
+        height: 400px;
+    } 
+}
+
+.bg-light-secondary {
+    background-color: #fdfffc;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+  
+.text-gray {
+color: #aaa;
+}
+
+.input-icon {
+    position: relative;
+    float: right;
+    left: -32px;
+    top: 7px;
+    z-index: 300;
+}
+
